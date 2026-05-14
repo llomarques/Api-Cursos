@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
 @Table(name="cursos")
 @Entity(name = "Curso")
 @Getter
@@ -30,4 +29,6 @@ public class Curso {
         this.ativo=true;
 
     }
+
+    public void excluirCurso(){this.ativo=false;}
 }
